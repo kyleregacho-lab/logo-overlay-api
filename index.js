@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json({ limit: '20mb' }));
 
 const LOGO_PATH = path.join(__dirname, 'logo-white.svg');
-const LOGO_SIZE_RATIO = 0.18; // 18% of banner width
+const LOGO_SIZE_RATIO = 0.25; // 18% of banner width
 
 app.get('/health', (req, res) => res.json({ ok: true }));
 
