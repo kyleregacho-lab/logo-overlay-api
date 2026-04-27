@@ -10,6 +10,7 @@ COPY package.json ./
 RUN npm install --production
 
 COPY logo-white.svg ./
+COPY fonts ./fonts
 COPY index.js ./
 
 EXPOSE 3000
